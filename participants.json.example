@@ -1,0 +1,26 @@
+{
+  "Мж": {
+    "email": "some@mail.ru",
+    "is_nonresident": false,
+    "address": "",
+    "blacklist": []
+  },
+  "Ташларин": {
+    "email": "some.mail@gmail.com",
+    "is_nonresident": true,
+    "address": "г. Казань, ул. Мусы Джалиля, д. Шамиля, кв. Хрюши, спр. Илюшу",
+    "blacklist": ["Мж"]
+  },
+  "Ташларин 2": {
+    "email": "dartweider96@mail.ru",
+    "is_nonresident": false,
+    "address": "",
+    "blacklist": ["Мж", "Ташларин 3"]
+  },
+  "Ташларин 3": {
+    "email": "sosnitskaya.anna@yandex.ru",
+    "is_nonresident": false,
+    "address": "",
+    "blacklist": []
+  }
+}
