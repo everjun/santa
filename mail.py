@@ -28,7 +28,6 @@ class ConsoleEmailSender(BaseEmailSender):
 
 class GoogleEmailSender(BaseEmailSender):
     def send_message(self, to, message):
-        print(to)
         smtp_settings = self.config
         from_addr = smtp_settings['user']
 
