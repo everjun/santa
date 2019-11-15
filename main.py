@@ -23,8 +23,6 @@ def main():
     chooser.set_participants(get_participants())
     result = chooser.finalize_list()
     for res_name, res in result.items():
-        if res['email'] != 'tsygankov.itis@gmail.com':
-            continue
         friend = result[res['friend']]
         if friend['is_nonresident']:
             email_sender.send_message(res['email'], noncity_message_template.format(name=res_name, friend=res['friend'],
